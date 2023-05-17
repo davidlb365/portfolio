@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="/assets/icons/code_icon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header class="header">
+        <div class="header__div">
+            <div class="switches">
+                <div class="toggle-theme" id="toggle-theme">
+                    <img src="assets/icons/moon.svg" alt="icon theme" class="toggle-theme__icon" id="toggle-icon">
+                    <p class="toggle-theme__text" id="toggle-text">Dark Mode</p>
+                </div>
+            </div>
+            <div class="colors" id="toggle-colors">
+                <div class="colors__item colors__item--blue" data-color="hsl(214, 84%, 56%)"></div>
+                <div class="colors__item colors__item--green" data-color="hsl(150, 84%, 56%)"></div>
+                <div class="colors__item colors__item--purple" data-color="hsl(276, 84%, 56%)"></div>
+                <div class="colors__item colors__item--orange" data-color="hsl(46, 84%, 56%)"></div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <section class="column column--left">
+            <article class="card card--profile">
+                <div class="card__image-container">
+                    <img src="/assets/images/profile.jpg" alt="image profile">
+                </div>
+                <div class="card__header">
+                    <h2 class="card__title">David</h2>
+                </div>
+                <div class="card__body">
+                    <div class="card__link">
+                        <i class="fas fa-envelope icon"></i>
+                        <a href="mailto:davidlb365@gmail.com">davidlb365@gmail.com</a>
+                    </div>
+                    <div class="card__link">
+                        <i class="fas fa-phone-alt icon"></i>
+                        <a href="tel:675198893">+34-675198893</a>
+                    </div>
+                    <p class="card__text">Graduado en Ingeniería Informática</p>
+                </div>
+            </article>
+        </section>
+        <section class="column column--right">
+            <article class="card card--tech">
+                <h2 class="card__title">Front End</h2>
+                <div class="skills">
+                    <div class="skills__item">
+                        <p class="skills__tech">HTML</p>
+                        <div class="skills__bar skills__bar--80"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">CSS</p>
+                        <div class="skills__bar skills__bar--90"></div>
+                    </div>
+                    <div class="skills__item">
+                        <p class="skills__tech">JavaScript</p>
+                        <div class="skills__bar skills__bar--60"></div>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <picture>
+                        <source srcSet="assets/images/project_ecommerce.avif" type="image/avif" />
+                        <source srcSet="assets/images/project_ecommerce.webp" type="image/webp" />
+                        <img src="assets/images/project_ecommerce.jpg" width={767} height={935}/>
+                    </picture>
+                </div>
+                <div class="project">
+                    <div class="project__content">
+                        <div class="project__tech">
+                            <p class="project__hashtag">#React</p>
+                        </div>
+                        <h3 class="card__title">E-commerce Product Page</h3>
+                        <p class="card__text">Proyecto E-commerce product page de Frontend Mentor.</p>
+                    </div>
+                    <div class="project__buttons">
+                        <button type="button" class="project__button">
+                            <a href="https://ecommerce-react-2f22f6.netlify.app/" target="_blank" class="project__link--demo">Demo</a>
+                        </button>
+                        <button type="button" class="project__button project__button--code">
+                            <a href="https://github.com/davidlb365/ecommerce-product-page-react" target="_blank">Code</a>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <picture>
+                        <source srcSet="assets/images/project_uptask.avif" type="image/avif" />
+                        <source srcSet="assets/images/project_uptask.webp" type="image/webp" />
+                        <img src="assets/images/project_uptask.jpg" width={767} height={935}/>
+                    </picture>
+                </div>
+                <div class="project">
+                    <div class="project__content">
+                        <div class="project__tech">
+                            <p class="project__hashtag">#FullStack</p>
+                            <p class="project__hashtag">#React</p>
+                            <p class="project__hashtag">#TailwindCSS</p>
+                            <p class="project__hashtag">#HeadlessUI</p>
+                            <p class="project__hashtag">#Node</p>
+                            <p class="project__hashtag">#MongoDB</p>
+                        </div>
+                        <h3 class="card__title">UpTask</h3>
+                        <p class="card__text">Proyecto UpTask para gestionar proyectos, con base de datos MongoDB, autenticación de usuario, JSON Web Token y LocalStorage</p>
+                    </div>
+                    <div class="project__buttons">
+                        <button type="button" class="project__button">
+                            <a href="https://uptask-mern-3e6839.netlify.app/" target="_blank" class="project__link--demo">Demo</a>
+                        </button>
+                        <button type="button" class="project__button project__button--code">
+                            <a href="https://github.com/davidlb365/UpTask_MERN_Backend" target="_blank">Code Backend</a>
+                        </button>
+                        <button type="button" class="project__button project__button--code">
+                            <a href="https://github.com/davidlb365/UpTask_MERN_Frontend" target="_blank">Code Frontend</a>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <picture>
+                        <source srcSet="assets/images/project_apv.avif" type="image/avif" />
+                        <source srcSet="assets/images/project_apv.webp" type="image/webp" />
+                        <img src="assets/images/project_apv.jpg" width={767} height={935}/>
+                    </picture>
+                </div>
+                <div class="project">
+                    <div class="project__content">
+                        <div class="project__tech">
+                            <p class="project__hashtag">#FullStack</p>
+                            <p class="project__hashtag">#React</p>
+                            <p class="project__hashtag">#TailwindCSS</p>
+                            <p class="project__hashtag">#Node</p>
+                            <p class="project__hashtag">#MongoDB</p>
+                        </div>
+                        <h3 class="card__title">Administrador de Pacientes de Veterinaria</h3>
+                        <p class="card__text">Proyecto Administrador de Pacientes de Veterinaria FullStack, con base de datos MongoDB, autenticación de usuario, JSON Web Token y LocalStorage</p>
+                    </div>
+                    <div class="project__buttons">
+                        <button type="button" class="project__button">
+                            <a href="https://apv-frontend-995b00.netlify.app/" target="_blank" class="project__link--demo">Demo</a>
+                        </button>
+                        <button type="button" class="project__button project__button--code">
+                            <a href="https://github.com/davidlb365/apv_backend" target="_blank">Code Backend</a>
+                        </button>
+                        <button type="button" class="project__button project__button--code">
+                            <a href="https://github.com/davidlb365/apv_frontend" target="_blank">Code Frontend</a>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <picture>
+                        <source srcSet="/assets/images/project_todo_list.avif" type="image/avif" />
+                        <source srcSet="/assets/images/project_todo_list.webp" type="image/webp" />
+                        <img src="/assets/images/project_todo_list.jpg" width={767} height={935}/>
+                    </picture>
+                </div>
+                <div class="project">
+                    <div class="project__content">
+                        <div class="project__tech">
+                            <p class="project__hashtag">#HTML</p>
+                            <p class="project__hashtag">#CSS</p>
+                            <p class="project__hashtag">#JavaScript</p>
+                        </div>
+                        <h3 class="card__title">Todo List</h3>
+                        <p class="card__text">Proyecto Todo List para anotar tareas a completar, con LocalStorage</p>
+                    </div>
+                    <div class="project__buttons">
+                        <button type="button" class="project__button">
+                            <a href="https://todo-list-5cb67b.netlify.app/" target="_blank" class="project__link--demo">Demo</a>
+                        </button>
+                        <button type="button" class="project__button project__button--code">
+                            <a href="https://github.com/davidlb365/todo_list_JS" target="_blank">Code</a>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <picture>
+                        <source srcSet="/assets/images/project_quioscoapp.avif" type="image/avif" />
+                        <source srcSet="/assets/images/project_quioscoapp.webp" type="image/webp" />
+                        <img src="/assets/images/project_quioscoapp.jpg" width={767} height={935}/>
+                    </picture>
+                </div>
+                <div class="project">
+                    <div class="project__content">
+                        <div class="project__tech">
+                            <p class="project__hashtag">#NextJS</p>
+                            <p class="project__hashtag">#TailwindCSS</p>
+                            <p class="project__hashtag">#Prisma</p>
+                        </div>
+                        <h3 class="card__title">Quioscoapp</h3>
+                        <p class="card__text">Página de tienda de productos de cafeteria, con base de datos PostgreSQL y panel de administración de órdenes en /admin</p>
+                    </div>
+                    <div class="project__buttons">
+                        <button type="button" class="project__button">
+                            <a href="https://quioscoapp-sooty.vercel.app" target="_blank" class="project__link--demo">Demo</a>
+                        </button>
+                        <button type="button" class="project__button project__button--code">
+                            <a href="https://github.com/davidlb365/quioscoapp" target="_blank">Code</a>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <picture>
+                        <source srcSet="/assets/images/project_calculator.avif" type="image/avif" />
+                        <source srcSet="/assets/images/project_calculator.webp" type="image/webp" />
+                        <img src="/assets/images/project_calculator.jpg" width={767} height={935}/>
+                    </picture>
+                </div>
+                <div class="project">
+                    <div class="project__content">
+                        <div class="project__tech">
+                            <p class="project__hashtag">#HTML</p>
+                            <p class="project__hashtag">#CSS</p>
+                            <p class="project__hashtag">#JavaScript</p>
+                        </div>
+                        <h3 class="card__title">Calculator App</h3>
+                        <p class="card__text">Proyecto Calculator App de Frontend Mentor, con cambio de tema y Localstorage</p>
+                    </div>
+                    <div class="project__buttons">
+                        <button type="button" class="project__button">
+                            <a href="https://calculator-app-e8e4ae.netlify.app/" target="_blank" class="project__link--demo">Demo</a>
+                        </button>
+                        <button type="button" class="project__button project__button--code">
+                            <a href="https://github.com/davidlb365/calculator-app-fm" target="_blank">Code</a>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <picture>
+                        <source srcSet="/assets/images/project_card.avif" type="image/avif" />
+                        <source srcSet="/assets/images/project_card.webp" type="image/webp" />
+                        <img src="/assets/images/project_card.jpg" width={767} height={935}/>
+                    </picture>
+                </div>
+                <div class="project">
+                    <div class="project__content">
+                        <div class="project__tech">
+                            <p class="project__hashtag">#React</p>
+                        </div>
+                        <h3 class="card__title">Interactive card details form</h3>
+                        <p class="card__text">Proyecto Interactive card details form de Frontend Mentor</p>
+                    </div>
+                    <div class="project__buttons">
+                        <button type="button" class="project__button">
+                            <a href="https://card-react-1d6f70.netlify.app/" target="_blank" class="project__link--demo">Demo</a>
+                        </button>
+                        <button type="button" class="project__button project__button--code">
+                            <a href="https://github.com/davidlb365/interactive-card-details-form-fm-react" target="_blank">Code</a>
+                        </button>
+                    </div>
+                </div>
+            </article>
+            <article class="card card--project">
+                <div class="card__image-container">
+                    <picture>
+                        <source srcSet="/assets/images/project_newshomepage.avif" type="image/avif" />
+                        <source srcSet="/assets/images/project_newshomepage.webp" type="image/webp" />
+                        <img src="/assets/images/project_newshomepage.jpg" width={767} height={935}/>
+                    </picture>
+                </div>
+                <div class="project">
+                    <div class="project__content">
+                        <div class="project__tech">
+                            <p class="project__hashtag">#React</p>
+                        </div>
+                        <h3 class="card__title">News Homepage</h3>
+                        <p class="card__text">Proyecto News Homepage de Frontend Mentor</p>
+                    </div>
+                    <div class="project__buttons">
+                        <button type="button" class="project__button">
+                            <a href="https://news-react-3aedca.netlify.app/" target="_blank" class="project__link--demo">Demo</a>
+                        </button>
+                        <button type="button" class="project__button project__button--code">
+                            <a href="https://github.com/davidlb365/news-homepage-fm-react" target="_blank">Code</a>
+                        </button>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
